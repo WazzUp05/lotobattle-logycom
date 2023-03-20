@@ -1,0 +1,1537 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: none;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: none; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "InterBold";
+  src: url("../fonts/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: "InterMedium";
+  src: url("../fonts/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: "InterLight";
+  src: url("../fonts/Inter-Light.ttf");
+}
+@font-face {
+  font-family: "Mistral";
+  src: url("../fonts/Mistral.ttf");
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --theme-color: #347AD6;
+  --theme-color-bg: #033E3C;
+  --theme-color-main: #007A70;
+  --color-blue: #347AD6;
+  --color-red:#EF3050;
+  --font-oswald: "Oswald", sans-serif;
+  --box-shadow-white: 0px 0px 50px rgba(255, 255, 255, 0.7);
+  --theme-box-shadow: 0px 0px 50px var(--theme-color);
+  --box-shadow-red: 0px 0px 50px var(--color-blue);
+  --box-shadow-blue: 0px 0px 50px var(--color-red);
+}
+
+body {
+  font-family: "Inter";
+}
+
+a {
+  text-decoration: none;
+}
+
+.modal__is-opened {
+  overflow: hidden;
+  width: 100vw;
+  position: absolute;
+  touch-action: none;
+}
+
+.main-button {
+  display: block;
+  width: 100%;
+  max-width: 290px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 15.5px;
+  background: #FDCB00;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 400;
+  font-family: var(--font-oswald);
+  transition: background 0.2s;
+}
+.main-button:hover {
+  opacity: 0.8;
+}
+.main-button:active {
+  opacity: 0.7;
+}
+.main-button--blue, .main-button--red {
+  color: #fff;
+}
+.main-button--blue {
+  background: var(--color-blue);
+}
+.main-button--red {
+  background: var(--color-red);
+}
+.main-button--theme {
+  background: var(--theme-color);
+  color: #fff;
+}
+
+.lotobattle {
+  position: relative;
+  padding-top: 65px;
+  min-height: 100vh;
+  margin-top: -50px;
+  background: var(--theme-color-bg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  transition: background-image 0.2s ease-in-out;
+}
+.lotobattle__img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 265px;
+}
+.lotobattle__title {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  font-family: var(--font-oswald);
+}
+.lotobattle__title span {
+  font-weight: 300;
+}
+.lotobattle__button {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.lotteryOfTheDay {
+  background: #000000;
+  border: 2px solid #FFFFFF;
+  box-shadow: var(--theme-box-shadow);
+  transition: box-shadow 0.2s;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 85px;
+}
+.lotteryOfTheDay__header {
+  padding: 16px 20px;
+  border-bottom: 2px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lotteryOfTheDay__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: var(--font-oswald);
+  text-transform: uppercase;
+}
+.lotteryOfTheDay__time {
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 0.6;
+  font-weight: 300;
+  font-family: "InterLight";
+}
+.lotteryOfTheDay__time span {
+  font-weight: 700;
+}
+.lotteryOfTheDay__left {
+  background: linear-gradient(0deg, rgba(239, 48, 80, 0.2), rgba(239, 48, 80, 0.2)), url(Фон.png);
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 510px;
+  text-align: center;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lotteryOfTheDay__left-wrapper {
+  width: 100%;
+}
+.lotteryOfTheDay__left-wrapper .main-button {
+  max-width: 100%;
+}
+.lotteryOfTheDay__left img {
+  margin-right: 14px;
+  width: 64px;
+  height: auto;
+}
+.lotteryOfTheDay__right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.lotteryOfTheDay__right .main-button {
+  margin-top: 15px;
+  margin-left: auto;
+}
+.lotteryOfTheDay__side {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: var(--font-oswald);
+  font-weight: 200;
+}
+.lotteryOfTheDay__name {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.lotteryOfTheDay__desc {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+.lotteryOfTheDay__body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.lotteryOfTheDay__btns {
+  display: flex;
+  align-items: center;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  margin-top: auto;
+  width: 100%;
+  gap: 15px;
+}
+.lotteryOfTheDay__awards-title {
+  font-size: 25px;
+  line-height: 32px;
+  margin-bottom: 15px;
+}
+
+.awards {
+  padding: 15px 20px;
+  max-width: 575px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #FFFFFF;
+  -webkit-backdrop-filter: blur(8.5px);
+          backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  color: #fff;
+}
+.awards__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: var(--font-oswald);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.awards__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  padding: 10px;
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.awards__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0.2;
+}
+.awards__item.active {
+  opacity: 1;
+}
+.awards__item-img {
+  max-width: 40px;
+  margin-bottom: 5px;
+}
+.awards__item-count {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  font-family: var(--font-oswald);
+}
+
+.lottery-history__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: var(--font-oswald);
+  margin-bottom: 15px;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.lottery-history-item {
+  position: relative;
+  overflow-x: hidden;
+  padding: 15px;
+  padding-bottom: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(12.5px);
+          backdrop-filter: blur(12.5px);
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.lottery-history-item--light .lottery-history-item__title {
+  background: var(--color-blue);
+}
+.lottery-history-item__sword {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.lottery-history-item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.lottery-history-item__header img {
+  width: 68px;
+}
+.lottery-history-item__header-left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+}
+.lottery-history-item__title {
+  background: var(--color-red);
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: var(--font-oswald);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.lottery-history-item__date {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.lottery-history-item__body {
+  opacity: 0.5;
+  margin-bottom: 16px;
+}
+.lottery-history-item__body-title {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+.lottery-history-item__body-wins {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.lottery-history-item__body-wins p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+.lottery-history-item__body-wins p span {
+  font-weight: 700;
+}
+.lottery-history-item__result {
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+}
+.lottery-history-item__result span {
+  margin-left: 5px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+}
+.lottery-history-item__result span img {
+  margin-left: 5px;
+  width: 18px;
+  height: auto;
+}
+
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px 8px 8px 10px;
+}
+
+.progress-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: -moz-max-content;
+  min-width: max-content;
+  color: #fff;
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+}
+
+.progress-bar-wrapper {
+  width: 100%;
+  height: 21px;
+  background: #000000;
+  border-radius: 8px;
+}
+
+.progress-bar {
+  position: absolute;
+  width: 2px;
+  height: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+  background: var(--theme-color);
+  transition: background 0.2s;
+  border-radius: 8px 0 0 8px;
+}
+
+.modal-lotobattle {
+  position: fixed;
+  z-index: 102;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 21, 21, 0.9019607843);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+.modal-lotobattle.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-rules {
+  position: fixed;
+  z-index: 102;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 21, 21, 0.9019607843);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+.modal-rules.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.modal-rules__table {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 58.33%);
+  border-top: 1px solid #FFFFFF;
+  width: 100%;
+  margin-top: 15px;
+}
+.modal-rules__table thead tr {
+  background: rgba(255, 255, 255, 0.08);
+}
+.modal-rules__table tbody tr:nth-of-type(1) {
+  background: rgba(255, 255, 255, 0);
+}
+.modal-rules__table tbody tr:nth-of-type(2) {
+  background: rgba(255, 255, 255, 0.08);
+}
+.modal-rules__table tbody tr:nth-of-type(3) {
+  background: rgba(255, 255, 255, 0.01);
+}
+.modal-rules__table tbody tr:nth-of-type(4) {
+  background: rgba(255, 255, 255, 0.05);
+}
+.modal-rules__table th {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+.modal-rules__table td {
+  font-size: 400px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.modal-rules__table th, .modal-rules__table td {
+  padding: 5.5px 0 5.5px 10px;
+  vertical-align: middle;
+  height: 51px;
+  width: 225px;
+}
+.modal-rules__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: var(--font-oswald);
+}
+.modal-rules__title:not(:first-child) {
+  margin-top: 75px;
+}
+.modal-rules__description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+}
+.modal-rules__description-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.modal-rules__left, .modal-rules__right {
+  flex: 1;
+}
+.modal-rules__content {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  padding: 20px;
+  padding-bottom: 50px;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px 10px 0px 0px;
+  background: #000000;
+  color: #fff;
+  z-index: 99;
+  transition: 0.2s;
+}
+.modal-rules__content .main-button {
+  max-width: 100%;
+  margin-top: 0;
+}
+.modal-rules__content .close {
+  position: absolute;
+  cursor: pointer;
+  top: -30px;
+  right: 10px;
+  z-index: 10;
+  opacity: 1;
+}
+.modal-rules__content .close svg {
+  width: 18px;
+  height: 18px;
+}
+.modal-rules__content .close:hover {
+  opacity: 1;
+}
+.modal-rules__content .close:hover svg path {
+  opacity: 0.8;
+}
+
+.modal-content {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  padding: 20px;
+  padding-bottom: 50px;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px 10px 0px 0px;
+  background: #000000;
+  color: #fff;
+  z-index: 99;
+  transition: 0.2s;
+}
+.modal-content .main-button {
+  max-width: 100%;
+  margin-top: 0;
+}
+.modal-content .close {
+  position: absolute;
+  cursor: pointer;
+  top: -30px;
+  right: 10px;
+  z-index: 10;
+  opacity: 1;
+}
+.modal-content .close svg {
+  width: 18px;
+  height: 18px;
+}
+.modal-content .close:hover {
+  opacity: 1;
+}
+.modal-content .close:hover svg path {
+  opacity: 0.8;
+}
+.modal-content__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-family: var(--font-oswald);
+}
+.modal-content__description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--font-oswald);
+  margin-bottom: 20px;
+}
+
+.modal-lotobattleasd {
+  position: fixed;
+  z-index: 102;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 21, 21, 0.9019607843);
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+.modal-lotobattleasd.reward .modal-lotobattle__header {
+  background: url("../image/biggame/achivments/header-modal-bg-2.png") no-repeat top center/contain;
+}
+.modal-lotobattleasd.closed .modal-lotobattle__header {
+  background: url("../image/biggame/achivments/header-modal-bg-3.png") no-repeat top center/contain;
+}
+.modal-lotobattleasd.closed .modal-lotobattle__button {
+  background: #DFE7F2;
+}
+.modal-lotobattleasd.closed .modal-lotobattle__button:hover {
+  background: rgba(43, 93, 168, 0.1);
+}
+.modal-lotobattleasd.closed .modal-lotobattle__button:active {
+  background: rgba(43, 93, 168, 0.15);
+}
+.modal-lotobattleasd.closed .achivment__img-wrapper {
+  opacity: 0.5;
+}
+.modal-lotobattleasd.closed.modal-lotobattle--quest .achivment__img-wrapper {
+  opacity: 1;
+}
+.modal-lotobattleasd.open {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+.modal-lotobattleasd__button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 16px;
+  background: #FECC00;
+  border-radius: 13.5px;
+  border: none;
+  text-align: center;
+  color: #000000;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  transition: all 0.1s ease;
+}
+.modal-lotobattleasd__button:hover {
+  background: #f2c200;
+}
+.modal-lotobattleasd__button:active {
+  background: #F0AD00;
+}
+.modal-lotobattleasd .close {
+  position: absolute;
+  cursor: pointer;
+  top: -30px;
+  right: 10px;
+  opacity: 1;
+}
+.modal-lotobattleasd .close:hover {
+  opacity: 0.8;
+}
+.modal-lotobattleasd__content {
+  position: fixed;
+  width: 320px;
+  background: #FFFFFF;
+  border-radius: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-lotobattleasd__header {
+  padding-top: 13.5px;
+  background: url("../image/biggame/achivments/header-modal-bg-1.png") no-repeat top center/contain;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+}
+.modal-lotobattleasd__header .achivment__padlock {
+  width: 44px;
+  height: 53px;
+  top: 20px;
+  left: 20px;
+}
+.modal-lotobattleasd__header .achivment__img-wrapper {
+  width: 210px;
+  height: 210px;
+  cursor: default;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: none;
+}
+
+.modal-quests {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.check-container {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 15px;
+  max-width: 100%;
+  color: #9A9A9A;
+}
+.check-container input + label {
+  top: 0;
+  width: auto;
+  font-size: 13px;
+  line-height: 15px;
+  color: #8d8d8d;
+  z-index: 1;
+}
+.check-container label {
+  position: static;
+  transform: translateY(0);
+  font-size: 15px !important;
+  line-height: 22px !important;
+  font-family: "Inter";
+}
+
+.check-container input {
+  margin-right: 15px;
+  margin-top: 3px;
+  min-width: 18px;
+  width: 18px !important;
+  height: 18px !important;
+  outline: none;
+}
+
+.check-container a {
+  color: #9A9A9A;
+  text-decoration: underline;
+}
+
+input[type=checkbox] {
+  position: relative;
+  width: 2.7em;
+  height: 1em;
+  color: #363839;
+  border: 1px solid #bdc1c6;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+}
+
+input[type=checkbox]::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 1px;
+  left: 4px;
+  width: 8px;
+  height: 11px;
+  border-style: solid;
+  border-color: #2b5da8;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+input[type=checkbox]:checked {
+  color: #fff;
+  border-color: #cdcdcd;
+}
+
+input[type=checkbox]:checked::before {
+  opacity: 1;
+}
+
+input[type=checkbox]:checked ~ label::before {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #033E3C;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-top-color: #FECC00;
+  border-left-color: #FECC00;
+  animation: spinner 400ms linear infinite;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.whiteBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 5px 20px rgba(43, 93, 168, 0.2);
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (min-width: 993px) {
+  .main-button {
+    max-width: 300px;
+  }
+  .lotobattle {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain cover;
+    padding-top: 110px;
+    margin-top: 0;
+  }
+  .lotobattle__wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+  .lotobattle__img {
+    margin-bottom: 20px;
+    margin-top: 547px;
+  }
+  .lotobattle__title {
+    margin-bottom: 30px;
+    max-width: 100%;
+    font-size: 49px;
+    line-height: 68.6px;
+  }
+  .lotobattle__button {
+    margin-top: 50px;
+    margin-bottom: 130px;
+  }
+  .awards {
+    padding: 30px;
+    margin-bottom: 120px;
+  }
+  .awards__title {
+    font-size: 45px;
+    line-height: 61px;
+    margin-bottom: 30px;
+  }
+  .awards__items {
+    margin-bottom: 30px;
+  }
+  .awards__item-img {
+    max-width: 58px;
+    margin-bottom: 7.34px;
+  }
+  .awards__item-count {
+    font-weight: 300;
+    font-size: 20.5625px;
+    line-height: 25px;
+  }
+  .lotteryOfTheDay {
+    margin-bottom: 85px;
+  }
+  .lotteryOfTheDay .awards__items {
+    margin-bottom: 0;
+  }
+  .lotteryOfTheDay .awards__items ~ .main-button {
+    margin-top: 55px;
+  }
+  .lotteryOfTheDay__awards-title {
+    margin-top: 10px;
+  }
+  .lotteryOfTheDay__header {
+    padding: 25px 30px;
+  }
+  .lotteryOfTheDay__title {
+    font-size: 45px;
+    line-height: 61px;
+  }
+  .lotteryOfTheDay__time {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .lotteryOfTheDay__left {
+    max-width: 510px;
+    padding: 27.5px;
+    min-height: 120px;
+    flex-direction: column;
+  }
+  .lotteryOfTheDay__left img {
+    width: 200px;
+  }
+  .lotteryOfTheDay__right {
+    display: flex;
+    flex-direction: column;
+  }
+  .lotteryOfTheDay__right .main-button {
+    margin-top: auto;
+    margin-left: 0;
+    margin-top: auto;
+  }
+  .lotteryOfTheDay__side {
+    margin-top: 25px;
+    font-size: 30px;
+    line-height: 33px;
+  }
+  .lotteryOfTheDay__name {
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .lotteryOfTheDay__desc {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .lotteryOfTheDay__body {
+    padding: 25px 30px;
+    gap: 30px;
+    flex-direction: row;
+  }
+  .lottery-history__title {
+    font-size: 45px;
+    line-height: 61px;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+  .lottery-history-item {
+    padding: 40px;
+    padding-bottom: 110px;
+    margin-bottom: 30px;
+  }
+  .lottery-history-item__header {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .lottery-history-item__header-left {
+    flex-direction: row;
+    align-items: center;
+  }
+  .lottery-history-item__header img {
+    width: 182px;
+  }
+  .lottery-history-item__title {
+    padding: 8px 15px;
+    margin-right: 25px;
+    font-size: 33px;
+    line-height: 33px;
+  }
+  .lottery-history-item__date {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .lottery-history-item__body {
+    margin-bottom: 30px;
+  }
+  .lottery-history-item__body-title {
+    font-size: 26px;
+    line-height: 31px;
+    margin-bottom: 15px;
+  }
+  .lottery-history-item__body-wins {
+    gap: 150px;
+  }
+  .lottery-history-item__body-wins p {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .lottery-history-item__body-wins p span {
+    font-weight: 700;
+  }
+  .lottery-history-item__result {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .lottery-history-item__result span {
+    margin-left: 10px;
+  }
+  .lottery-history-item__result span img {
+    margin-left: 10px;
+    width: 28px;
+  }
+  .modal-rules__wrapper {
+    display: flex;
+    gap: 50px;
+  }
+  .modal-rules__content {
+    max-width: 1110px;
+    border-radius: 10px;
+    padding: 65px 50px 50px 50px;
+    bottom: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .modal-rules__content .close {
+    top: -45px;
+    right: 0;
+  }
+  .modal-rules__content .close svg {
+    width: 28px;
+    height: 28px;
+  }
+  .modal-content {
+    max-width: 390px;
+    border-radius: 10px;
+    padding: 30px;
+    bottom: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .modal-content .close {
+    top: -45px;
+    right: 0;
+  }
+  .modal-content .close svg {
+    width: 28px;
+    height: 28px;
+  }
+}/*# sourceMappingURL=style.css.map */

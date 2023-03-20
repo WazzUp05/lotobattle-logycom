@@ -1,0 +1,1071 @@
+@import '__normalize'
+@import '__fonts'
+@import '__reset'
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap')
+
+:root 
+    --theme-color: #347AD6
+    --theme-color-bg: #033E3C
+    --theme-color-main: #007A70
+    --color-blue: #347AD6
+    --color-red:#EF3050
+    --font-oswald: 'Oswald', sans-serif
+    --box-shadow-white: 0px 0px 50px rgba(255, 255, 255, 0.7)
+    --theme-box-shadow:  0px 0px 50px var(--theme-color)
+    --box-shadow-red:  0px 0px 50px var(--color-blue)
+    --box-shadow-blue: 0px 0px 50px var(--color-red)
+
+
+$theme-color-bg: #033E3C
+$theme-color-main: #007A70
+$yellow: #FECC00
+$hover-yellow: #f2c200
+$active-yellow: #F0AD00
+$white: #FFFFFF
+$black: #000000
+$gray: #4E4E4E
+$gray-light: #9A9A9A
+$blue: #2B5DA8
+
+$regular: 'Inter'
+$bold: "InterBold"
+$medium: 'InterMedium'
+$light: 'InterLight'
+
+body
+    font-family: $regular
+
+a
+    text-decoration: none
+
+.modal__is-opened 
+    overflow: hidden
+    width: 100vw
+    position: absolute
+    touch-action: none
+
+
+.main-button
+    display: block
+    width: 100%
+    max-width: 290px
+    margin: 0 auto
+    margin-top: 20px
+    padding: 15.5px
+    background: #FDCB00
+    border-radius: 10px
+    border: none
+    text-align: center
+    text-transform: uppercase
+    color: $black
+    font-size: 16px
+    line-height: 19.2px
+    font-weight: 400
+    font-family: var(--font-oswald)
+    transition: background .2s
+
+    &:hover
+        opacity: 0.8
+
+    &:active
+        opacity: 0.7
+
+    &--blue, &--red
+        color: #fff
+
+    &--blue
+        background: var(--color-blue)
+
+    &--red
+        background: var(--color-red)
+
+    &--theme 
+        background: var(--theme-color)
+        color: #fff
+
+
+.lotobattle 
+    position: relative
+    // padding: 0 15px
+    padding-top: 65px
+    min-height: 100vh
+    margin-top: -50px
+    background: var(--theme-color-bg)
+    background-position: top center
+    background-repeat: no-repeat
+    background-size: contain, cover  
+    -webkit-transition: background-image 0.2s ease-in-out
+    transition: background-image 0.2s ease-in-out
+
+    &__img
+        margin: 0 auto
+        display: block
+        margin-bottom: 10px
+        margin-top: 265px
+        
+    &__title
+        color: #fff
+        font-weight: 600
+        text-transform: uppercase
+        font-size: 15px
+        line-height: 21px
+        text-align: center
+        font-family: var(--font-oswald)
+        span
+            font-weight: 300
+
+    &__button 
+        margin-top: 30px
+        margin-bottom: 80px
+
+.lotteryOfTheDay
+    background: #000000
+    border: 2px solid #FFFFFF
+    box-shadow: var(--theme-box-shadow)
+    transition: box-shadow .2s
+    border-radius: 10px
+    color: #fff
+    margin-bottom: 85px
+
+    &__header 
+        padding: 16px 20px
+        border-bottom: 2px solid #FFFFFF
+        display: flex
+        align-items: center
+        justify-content: space-between
+    
+    &__title 
+        font-weight: 700
+        font-size: 24px
+        line-height: 32px
+        font-family: var(--font-oswald)
+        text-transform: uppercase
+
+    &__time
+        font-size: 14px
+        line-height: 17px
+        opacity: 0.6
+        font-weight: 300
+        font-family: $light
+        span
+            font-weight: 700
+
+    &__left
+        background: linear-gradient(0deg, rgba(239, 48, 80, 0.2), rgba(239, 48, 80, 0.2)), url(Фон.png)
+        border-radius: 5px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        width: 100%
+        max-width: 510px
+        text-align: center
+        padding: 14px 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        &-wrapper
+            width: 100%
+            .main-button
+                max-width: 100%
+        img
+            margin-right: 14px
+            width: 64px
+            height: auto
+
+    &__right 
+        display: flex
+        flex-direction: column
+        width: 100%
+        .main-button
+            margin-top: 15px
+            margin-left: auto
+
+    &__side
+        font-size: 16px
+        line-height: 19px
+        letter-spacing: 0.05em
+        text-transform: uppercase
+        font-family: var(--font-oswald)
+        font-weight: 200
+
+    &__name
+        font-size: 18px
+        line-height: 23px
+        font-weight: 700
+        margin-bottom: 8px
+    
+    &__desc
+        font-size: 14px
+        line-height: 17px
+        font-weight: 400
+        opacity: 0.5
+        margin-bottom: 20px
+
+    &__body
+        padding: 20px
+        display: flex
+        flex-direction: column
+        gap: 25px
+
+    &__btns
+        display: flex
+        align-items: center
+        min-width: max-content
+        margin-top: auto
+        width: 100%
+        gap: 15px
+
+    &__awards
+        &-title
+            font-size: 25px
+            line-height: 32px
+            margin-bottom: 15px
+
+.awards
+    padding: 15px 20px
+    max-width: 575px
+    margin: 0 auto
+    margin-bottom: 80px
+    background: rgba(0, 0, 0, 0.4)
+    border: 2px solid #FFFFFF
+    backdrop-filter: blur(8.5px)
+    border-radius: 10px
+    color: #fff
+    &__title
+        font-size: 24px
+        line-height: 32px
+        font-weight: 700
+        font-family: var(--font-oswald)
+        margin-bottom: 15px
+        text-transform: uppercase
+    
+    &__items
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 17px
+        padding: 10px
+        margin-bottom: 25px
+        background: rgba(255, 255, 255, 0.1)
+        border-top: 1px solid #fff
+        border-bottom: 1px solid #fff
+    
+    &__item
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        opacity: 0.2
+        &.active 
+            opacity: 1
+        &-img
+            max-width: 40px
+            margin-bottom: 5px
+
+        &-count
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            letter-spacing: 0.08em
+            font-family: var(--font-oswald)
+        
+
+.lottery-history
+    &__title
+        font-size: 24px
+        line-height: 32px
+        font-weight: 700
+        font-family: var(--font-oswald)
+        margin-bottom: 15px
+        margin-left: 20px
+        color: #fff
+
+.lottery-history-item
+    position: relative
+    overflow-x: hidden
+    padding: 15px
+    padding-bottom: 40px
+    background: rgba(0, 0, 0, 0.4)
+    border: 2px solid rgba(255, 255, 255, 0.5)
+    backdrop-filter: blur(12.5px)
+    border-radius: 10px
+    color: #fff
+    margin-bottom: 10px
+
+    &--light
+        .lottery-history-item__title
+            background: var(--color-blue)
+
+    &__sword
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        width: 100%
+
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 15px
+
+        img
+            width: 68px
+        
+        &-left 
+            display: flex
+            align-items: flex-start
+            flex-direction: column-reverse
+
+    &__title
+        background: var(--color-red)
+        padding: 5px
+        margin-right: 10px
+        font-size: 16px
+        line-height: 16px
+        font-family: var(--font-oswald)
+        font-weight: 500
+        text-transform: uppercase
+
+    &__date
+        font-size: 13px
+        line-height: 18px
+        text-transform: uppercase
+        margin-bottom: 5px
+
+    &__body
+        opacity: 0.5
+        margin-bottom: 16px
+        &-title
+            font-weight: 700
+            font-size: 13px
+            line-height: 16px
+            margin-bottom: 5px
+
+        &-wins
+            display: flex
+            align-items: center
+            gap: 30px
+            p
+                font-weight: 400
+                font-size: 13px
+                line-height: 16px
+                span
+                    font-weight: 700
+
+    &__result
+        font-size: 13px
+        line-height: 16px
+        display: flex
+        font-weight: 400
+        align-items: center
+        span
+            margin-left: 5px
+            font-weight: 700
+            display: inline-flex
+            align-items: center
+            img
+                margin-left: 5px
+                width: 18px
+                height: auto
+            
+
+
+.progress-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+    border: 1px solid #FFFFFF
+    border-radius: 10px 8px 8px 10px
+
+.progress-text
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translateX(-50%) translateY(-50%) 
+    min-width: max-content
+    color: #fff
+    opacity: 0.5
+    font-weight: 400
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.08em
+
+.progress-bar-wrapper
+    width: 100%
+    height: 21px
+    background: #000000
+    border-radius: 8px
+        
+.progress-bar
+    position: absolute
+    width: calc(0px + 2px)
+    height: calc(100% + 2px)
+    top: -1px
+    left: -1px
+    background: var(--theme-color)
+    transition: background .2s
+    border-radius: 8px 0 0 8px
+    
+
+.modal-lotobattle
+    position: fixed
+    z-index: 102
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: #151515e6
+    opacity: 0
+    visibility: hidden
+    transition: all .2s
+    &.show
+        visibility: visible
+        opacity: 1
+        transform: translateY(0)
+
+.modal-rules
+    position: fixed
+    z-index: 102
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: #151515e6
+    opacity: 0
+    visibility: hidden
+    transition: all .2s
+    &.show
+        visibility: visible
+        opacity: 1
+        transform: translateY(0)
+
+    &__table 
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 58.33%)
+        border-top: 1px solid #FFFFFF
+        width: 100%
+        margin-top: 15px
+
+        thead
+            tr
+                background: rgba(255, 255, 255, 0.08)
+        tbody
+            tr
+                &:nth-of-type(1)
+                    background: rgba(255, 255, 255, 0)
+                &:nth-of-type(2)
+                    background: rgba(255, 255, 255, 0.08)
+                &:nth-of-type(3)
+                    background: rgba(255, 255, 255, 0.01)
+                &:nth-of-type(4)
+                    background: rgba(255, 255, 255, 0.05)
+
+                    
+        th
+            font-weight: 700
+            font-size: 15px
+            line-height: 18px
+
+        td
+            font-size: 400px
+            font-size: 16px
+            line-height: 19px
+
+        th, td
+            padding: 5.5px 0 5.5px 10px
+            vertical-align: middle
+            height: 51px
+            width: 225px
+            
+
+    &__title
+        font-weight: 700
+        font-size: 22px
+        line-height: 29px
+        margin-bottom: 20px
+        text-transform: uppercase
+        font-family: var(--font-oswald)
+        &:not(:first-child)
+            margin-top: 75px
+            
+
+    &__description
+        font-weight: 400
+        font-size: 15px
+        line-height: 18px
+        color: rgba(255, 255, 255, 0.5)
+        margin-bottom: 10px
+
+    &__description-title
+        font-weight: 700
+        font-size: 18px
+        line-height: 22px
+        color: #fff
+        margin-bottom: 10px
+        margin-top: 15px
+
+    &__left, &__right
+        flex: 1
+        
+
+    &__content
+        position: absolute
+        width: 100%
+        max-width: 500px
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 40px
+        padding: 20px
+        padding-bottom: 50px
+        border: 1px solid #FFFFFF
+        border-radius: 10px 10px 0px 0px
+        background:#000000
+        color: #fff
+        z-index: 99
+        transition: .2s
+
+        .main-button
+            max-width: 100%
+            margin-top: 0
+
+        .close
+            position: absolute
+            cursor: pointer
+            top: -30px
+            right: 10px
+            z-index: 10
+            opacity: 1
+            svg 
+                width: 18px
+                height: 18px
+
+            &:hover 
+                opacity: 1
+                svg
+                    path
+                        opacity: 0.8
+
+.modal-content
+    position: absolute
+    width: 100%
+    max-width: 500px
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 40px
+    padding: 20px
+    padding-bottom: 50px
+    border: 1px solid #FFFFFF
+    border-radius: 10px 10px 0px 0px
+    background:#000000
+    color: #fff
+    z-index: 99
+    transition: .2s
+
+    .main-button
+        max-width: 100%
+        margin-top: 0
+
+    .close
+        position: absolute
+        cursor: pointer
+        top: -30px
+        right: 10px
+        z-index: 10
+        opacity: 1
+        svg 
+            width: 18px
+            height: 18px
+
+        &:hover 
+            opacity: 1
+            svg
+                path
+                    opacity: 0.8
+
+    &__title
+        font-weight: 700
+        font-size: 22px
+        line-height: 29px
+        margin-bottom: 15px
+        text-transform: uppercase
+        font-family: var(--font-oswald)
+
+    &__description
+        font-weight: 400
+        font-size: 15px
+        line-height: 18px
+        color: rgba(255, 255, 255, 0.5)
+        font-family: var(--font-oswald)
+        margin-bottom: 20px
+
+.modal-lotobattleasd
+    position: fixed
+    z-index: 102
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: #151515e6
+    opacity: 0
+    display: none
+    visibility: hidden
+    transition: all .2s
+
+    &.reward
+        .modal-lotobattle__header
+            background: url('../image/biggame/achivments/header-modal-bg-2.png') no-repeat top center/contain
+
+    &.closed
+        .modal-lotobattle__header
+            background: url('../image/biggame/achivments/header-modal-bg-3.png') no-repeat top center/contain
+        
+        .modal-lotobattle__button
+            background: #DFE7F2
+            &:hover
+                background: rgba(43,93,168,.1)
+            &:active
+                background: rgba(43,93,168,.15)
+
+        .achivment__img-wrapper
+            opacity: 0.5
+
+    &.closed.modal-lotobattle--quest
+        .achivment__img-wrapper
+            opacity: 1
+
+    &.open
+        opacity: 1
+        visibility: visible
+        display: block
+
+    &__button
+        display: block
+        width: 100%
+        max-width: 300px
+        margin: 0 auto
+        margin-top: 20px
+        padding: 16px
+        background: $yellow
+        border-radius: 13.5px
+        border: none
+        text-align: center
+        color: $black
+        font-size: 16px
+        line-height: 18px
+        font-weight: 700
+        transition: all .1s ease
+        &:hover 
+            background: $hover-yellow
+        &:active
+            background: $active-yellow
+
+    .close
+        position: absolute
+        cursor: pointer
+        top: -30px
+        right: 10px
+        opacity: 1
+        &:hover 
+            opacity: 0.8
+
+    &__content
+        position: fixed
+        width: 320px
+        background: $white
+        border-radius: 25px
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+    &__header
+        padding-top: 13.5px
+        background: url('../image/biggame/achivments/header-modal-bg-1.png') no-repeat top center/contain
+        height: 220px
+        display: flex
+        justify-content: center
+        .achivment__padlock
+            width: 44px
+            height: 53px
+            top: 20px
+            left: 20px
+
+        .achivment__img-wrapper
+            width: 210px
+            height: 210px
+            cursor: default
+
+
+
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] 
+    -webkit-appearance: none
+
+
+.modal-quests
+    padding-top: 60px
+    text-align: center
+
+.check-container 
+    font-size: 14px
+    font-style: normal
+    font-weight: 400
+    line-height: 17px
+    letter-spacing: 0em
+    text-align: left
+    margin-bottom: 15px
+    max-width: 100%
+    color: #9A9A9A
+    input+label 
+        top: 0
+        width: auto
+        font-size: 13px
+        line-height: 15px
+        color: #8d8d8d
+        z-index: 1
+
+    label
+        position: static
+        transform: translateY(0)
+        font-size: 15px !important
+        line-height: 22px !important
+        font-family: $regular
+
+.check-container
+    input
+        margin-right: 15px
+        margin-top: 3px
+        min-width: 18px
+        width: 18px !important
+        height: 18px !important
+        outline: none
+
+
+.check-container a 
+    color: #9A9A9A
+    text-decoration: underline
+
+
+input[type=checkbox] 
+    position: relative
+    width: 2.7em
+    height: 1em
+    color: #363839
+    border: 1px solid #bdc1c6
+    border-radius: 4px
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    outline: 0
+    cursor: pointer
+    transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1)
+
+
+input[type=checkbox]::before 
+    position: absolute
+    content: ""
+    display: block
+    top: 1px
+    left: 4px
+    width: 8px
+    height: 11px
+    border-style: solid
+    border-color: #2b5da8
+    border-width: 0 3px 3px 0
+    transform: rotate(45deg)
+    opacity: 0
+
+
+input[type=checkbox]:checked 
+    color: #fff
+    border-color: #cdcdcd
+
+
+input[type=checkbox]:checked::before 
+    opacity: 1
+
+
+input[type=checkbox]:checked~label::before 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+
+.preloader
+    position: fixed
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #033E3C
+
+.spinner 
+    width: 40px
+    height: 40px
+    border-top-color: $yellow
+    border-left-color: $yellow
+    animation: spinner 400ms linear infinite
+    border-bottom-color: transparent
+    border-right-color: transparent
+    border-style: solid
+    border-width: 2px
+    border-radius: 50%  
+    box-sizing: border-box
+    display: inline-block
+    vertical-align: middle
+
+
+.whiteBlock 
+    display: flex
+    flex-direction: column
+    gap: 10px
+    box-shadow: 0px 5px 20px rgba(43, 93, 168, 0.2)
+    background: #ffffff
+    border-radius: 25px
+    padding: 20px
+    margin-bottom: 25px
+
+// @media screen and (max-width: 1024px)
+//     .fixed-footer-box
+//         z-index: 103!important
+
+//     .header
+//         background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%)
+
+//     .header__mobile-button
+//         background: rgba(255, 255, 255, 0.3) !important
+//         svg
+//             path
+//                 stroke: #fff
+
+//     .header__main-link
+//         span
+//             color: #fff
+//         img
+//             filter: brightness(0) invert(1)
+
+//     .header__announ-button
+//         svg
+//             path
+//                 fill: #fff
+
+//     .header__lang-switch
+//         background: rgba(255, 255, 255, 0.3) !important
+//         color: #fff
+
+//     .header__announ-button 
+//         background: transparent !important
+
+
+
+@keyframes spinner 
+    from 
+        transform: rotate(0deg)
+    to 
+        transform: rotate(360deg)
+  
+
+@media (min-width: 993px) 
+    .main-button
+        max-width: 300px
+
+    .lotobattle 
+        background-position: top center
+        background-repeat: no-repeat
+        background-size: contain cover
+        padding-top: 110px
+        margin-top: 0
+        &__wrapper
+            max-width: 1110px
+            margin: 0 auto
+
+        &__img
+            margin-bottom: 20px
+            margin-top: 547px
+
+        &__title
+            margin-bottom: 30px
+            max-width: 100%
+            font-size: 49px
+            line-height: 68.6px
+
+        &__button 
+            margin-top: 50px
+            margin-bottom: 130px
+
+    .awards
+        padding: 30px
+        margin-bottom: 120px
+        &__title
+            font-size: 45px
+            line-height: 61px
+            margin-bottom: 30px
+        
+        &__items
+            margin-bottom: 30px
+        
+        &__item
+            &-img
+                max-width: 58px
+                margin-bottom: 7.34px
+
+            &-count
+                font-weight: 300
+                font-size: 20.5625px
+                line-height: 25px
+
+    .lotteryOfTheDay
+        margin-bottom: 85px
+        .awards__items
+            margin-bottom: 0
+            ~.main-button
+                margin-top: 55px
+
+        &__awards
+            &-title
+                margin-top: 10px
+
+        &__header 
+            padding: 25px 30px
+        
+        &__title 
+            font-size: 45px
+            line-height: 61px
+
+        &__time
+            font-size: 20px
+            line-height: 24px
+
+        &__left
+            max-width: 510px
+            padding: 27.5px
+            min-height: 120px
+            flex-direction: column
+            img
+                width: 200px
+
+        &__right 
+            display: flex
+            flex-direction: column
+            .main-button
+                margin-top: auto
+                margin-left: 0
+                margin-top: auto
+
+        &__side
+            margin-top: 25px
+            font-size: 30px
+            line-height: 33px
+
+        &__name
+            font-size: 30px
+            line-height: 39px
+            font-weight: 700
+            margin-bottom: 8px
+        
+        &__desc
+            font-size: 18px
+            line-height: 22px
+            margin-bottom: 20px
+
+        &__body
+            padding: 25px 30px
+            gap: 30px
+            flex-direction: row
+
+    .lottery-history
+        &__title
+            font-size: 45px
+            line-height: 61px
+            margin-bottom: 30px
+            margin-left: 0
+
+    .lottery-history-item
+        padding: 40px
+        padding-bottom: 110px
+        margin-bottom: 30px
+
+        &__header
+            flex-direction: row
+            align-items: flex-start
+            justify-content: space-between
+            margin-bottom: 0
+            &-left
+                flex-direction: row
+                align-items: center
+            img
+                width: 182px
+
+        &__title
+            padding: 8px 15px
+            margin-right: 25px
+            font-size: 33px
+            line-height: 33px
+
+        &__date
+            font-size: 25px
+            line-height: 34px
+
+        &__body
+            margin-bottom: 30px
+            &-title
+                font-size: 26px
+                line-height: 31px
+                margin-bottom: 15px
+
+            &-wins
+                gap: 150px
+                p
+                    font-weight: 400
+                    font-size: 28px
+                    line-height: 34px
+                    span
+                        font-weight: 700
+
+        &__result
+            font-size: 28px
+            line-height: 34px
+            span
+                margin-left: 10px
+                img
+                    margin-left: 10px
+                    width: 28px
+    .modal-rules
+        &__wrapper 
+            display: flex
+            gap: 50px
+        &__content  
+            max-width: 1110px
+            border-radius: 10px 
+            padding: 65px 50px 50px 50px
+            bottom: auto
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%) 
+
+            .close 
+                top: -45px
+                right: 0
+                svg 
+                    width: 28px
+                    height: 28px
+    
+
+    .modal-content
+        max-width: 390px
+        border-radius: 10px 
+        padding: 30px
+        bottom: auto
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%) 
+
+        .close 
+            top: -45px
+            right: 0
+            svg 
+                width: 28px
+                height: 28px
+
+    
